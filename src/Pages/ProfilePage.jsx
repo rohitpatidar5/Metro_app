@@ -3,6 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { BsLinkedin } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 
 function ProfilePage({ isOpen, onClose }) {
@@ -26,6 +27,7 @@ function ProfilePage({ isOpen, onClose }) {
         </div>
 
         {/* Profile Information */}
+        <Link to='details'>
         <div className="flex space-x-4 my-4 -mx-1 border rounded-lg shadow-md py-1 border-slate-200">
           <img
             src="https://www.shutterstock.com/image-vector/passport-photo-young-handsome-redhead-260nw-754397068.jpg"
@@ -37,6 +39,7 @@ function ProfilePage({ isOpen, onClose }) {
             <p className="text-sm text-gray-500">+088 0000000000</p>
           </div>
         </div>
+        </Link>
 
         {/* Options List */}
         <div className="space-y-1">
