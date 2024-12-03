@@ -77,7 +77,7 @@ function ProfileDetails() {
               </span>
               <input
                 type="text"
-                placeholder="1639200002"
+                placeholder="**********"
                 className="flex-1 border border-gray-300 rounded-md p-2"
               />
             </div>
