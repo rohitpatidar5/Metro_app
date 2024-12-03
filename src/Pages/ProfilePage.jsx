@@ -1,4 +1,9 @@
 import React from 'react'
+import { FaFacebook } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { BsLinkedin } from "react-icons/bs";
+import { RiTwitterXFill } from "react-icons/ri";
+
 
 function ProfilePage({ isOpen, onClose }) {
   return (
@@ -7,7 +12,7 @@ function ProfilePage({ isOpen, onClose }) {
       isOpen ? 'translate-x-0' : '-translate-x-full'
     } transition-transform duration-300`}
   >
-    <div className="bg-white h-full w-[70%] max-w-md shadow-lg text-black">
+    <div className="bg-white h-full w-[70%] max-w-md shadow-lg text-black ">
       <div className="p-4">
         {/* Header */}
         <div className="flex justify-between items-center">
@@ -66,7 +71,12 @@ function ProfilePage({ isOpen, onClose }) {
         </div>
 
         {/* Footer */}
-        <div className='bg-green-600 absolute bottom-1'>
+        <div className='text-3xl mt-[240px] flex gap-4 justify-center max-w-full border rounded-lg -mx-1 py-2  shadow-md'>
+        <div><FaFacebook /></div>
+       <div> <PiInstagramLogoFill /></div>
+        <div><BsLinkedin /></div>
+        <div><RiTwitterXFill /></div>
+
             
         </div>
       </div>
