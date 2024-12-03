@@ -6,6 +6,7 @@ import LanguageScreen from './Screens/LanguageScreen'
 import NumberScreen from './Screens/NumberScreen'
 import Otpverification from './Screens/Otpverification'
 import SuccessScreen from './Screens/SuccessScreen'
+import HomePage from './Pages/HomePage'
 
 function App() {
   
@@ -20,6 +21,8 @@ function App() {
       <Route path='/lang/number' element={<NumberScreen/>}/>
       <Route path='/lang/number/otp' element={<Otpverification/>}/>
       <Route path='/lang/number/otp/success' element={<SuccessScreen/>}/>
+      <Route path='/homepage' element={<HomePage/>}/>
+
       
     
 

@@ -1,8 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function SuccessScreen() {
+
+  const navigate =useNavigate();
+  const handleClick = () =>{
+    navigate('/homepage')
+  }
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
+    <div onClick={handleClick} className="flex items-center justify-center h-screen bg-white">
       <div className="text-center">
         <div className="flex items-center justify-center w-20 h-20 mx-auto mb-6 bg-green-100 rounded-full">
           <svg
