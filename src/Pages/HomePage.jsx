@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MdHomeFilled } from "react-icons/md";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiSearchLine } from "react-icons/ri";
+import ProfilePage from './ProfilePage';
 
 function HomePage() {
+    const [isProfileOpen, setProfileOpen] = useState(false);
+
   return (
     <div className=" text-white min-h-screen ">
+        <ProfilePage
+         isOpen={isProfileOpen}
+         onClose={() => setProfileOpen(false)}
+        />
       {/* Header */}
       <div className="bg-green-900 flex flex-col px-4 py-3 pb-10">
         <div className="flex justify-between space-x-2 my-2 ">
-          <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
+          <div className="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center  " onClick={() => setProfileOpen(true)}>
           <GiHamburgerMenu />
           </div>
           <div className="bg-green-700 p-1 rounded-md">360 gm</div>
