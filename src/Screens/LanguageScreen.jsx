@@ -11,7 +11,7 @@ const LanguageScreen = ({ onSelectLanguage }) => {
   };
 
   return (
-    <div className="min-w-screen min-h-screen bg-white flex flex-col   bg-gradient-to-r from-[#99C3AF]/70 to-[#FEF08A]/70 p-4">
+    <div className="min-w-screen min-h-screen flex flex-col bg-gradient-to-r from-[#99C3AF]/70 to-[#FEF08A]/70 p-4">
         <Link to='/wel'>
         <IoArrowBack className='text-2xl my-4' />
         </Link>
@@ -42,7 +42,7 @@ const LanguageScreen = ({ onSelectLanguage }) => {
       </div>
     
     <Link to='number '>
-      <button className="bg-green-700 text-white py-2 px-4 rounded-2xl w-[250px] ml-6 mt-[260px]">Continue</button>
+      <button className="bg-green-700 hover:bg-green-600 text-white py-2 px-4 rounded-full w-[250px] ml-6 mt-[260px]">Continue</button>
       </Link>
       </div>
     </div>
