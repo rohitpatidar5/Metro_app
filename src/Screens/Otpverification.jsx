@@ -5,13 +5,15 @@ import { Link } from 'react-router-dom';
 
 function Otpverification() {
   return (
-    <div className=" min-h-screen flex flex-col bg-gradient-to-r from-[#99C3AF] to-[#FEF08A] p-4">
+    <div className=" min-h-screen flex flex-col bg-gradient-to-r from-[#99C3AF]/70 to-[#FEF08A]/70 p-4">
       
+    <Link to='/lang/number'>
     <IoArrowBack className='text-2xl my-4' />
+    </Link>
      
     
      
-      <div className="w-full h-[630px] max-w-md bg-white rounded-lg shadow-lg p-6 space-y-4 my-4 relative">
+      <div className="w-full h-[650px] max-w-md bg-white rounded-2xl shadow-lg p-6 space-y-4 relative">
 
 
       <h2 className="text-lg font-medium text-gray-800 text-center mb-4">Enter OTP</h2>
