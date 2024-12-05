@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 .swiper-pagination {
-    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ml-[180px] mb-[70px];
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ml-[180px] mb-[80px];
   }
+
+  .swiper-pagination-bullet {
+    @apply w-2 h-2 bg-white; /* Adjust size and background color */
+  }
+
+  .swiper-pagination-bullet-active {
+  @apply w-6  bg-green-300 rounded-full; /* Add active state styling */
+}
